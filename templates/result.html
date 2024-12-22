@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="text-center">Prediction Result</h1>
+    <div class="text-center mt-3">
+        <h3>Result: {{ result }}</h3>
+        <p>Severity: {{ severity }}%</p>
+        <div class="mt-4">
+            <h4>Uploaded X-ray Image:</h4>
+            <img src="{{ image_path }}" alt="X-ray Image" class="img-fluid rounded shadow" style="max-width: 100%; height: auto;">
+        </div>
+        <div class="mt-4">
+            <h4>Infection Area Visualization:</h4>
+            <img src="{{ heatmap_path }}" alt="Infection Heatmap" class="img-fluid rounded shadow" style="max-width: 100%; height: auto;">
+        </div>
+        <div class="mt-4">
+            <a href="{{ url_for('download_report', prediction_id=prediction_id) }}" class="btn btn-success">Download Report</a>
+            <a href="{{ url_for('dashboard') }}" class="btn btn-primary">Back to Dashboard</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

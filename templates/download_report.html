@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 class="text-center">Prediction Report</h1>
+    <div class="text-center">
+        <p>Image: {{ prediction.image_filename }}</p>
+        <p>Result: {{ prediction.result }}</p>
+        <p>Severity: {{ prediction.severity }}</p>
+        <p>Date: {{ prediction.timestamp }}</p>
+        <a href="{{ url_for('download_report', prediction_id=prediction.id) }}" class="btn btn-primary">Download Report</a>
+    </div>
+{% endblock %}
