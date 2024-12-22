@@ -1,0 +1,5 @@
+Prediction Report:
+
+Image Filename: b7934cfc-5031-4360-a11c-3e865d0b09fc.jpg
+Result: Normal
+Severity: 0%

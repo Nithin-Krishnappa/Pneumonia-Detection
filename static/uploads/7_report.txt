@@ -1,0 +1,5 @@
+Prediction Report:
+
+Image Filename: 5cc8dd0d-8d7f-4c46-96d9-54a866cc76c3.jpg
+Result: Pneumonia
+Severity: b'\x10\xe0\xc7B'%
